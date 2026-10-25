@@ -1,0 +1,604 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#11111a" />
+    <meta
+      name="description"
+      content="Brawl Universe — фан-сайт для знакомства с бойцами и режимами Brawl Stars."
+    />
+    <title>BRAWL UNIVERSE — твоя игровая вселенная</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Russo+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="site-noise" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <nav
+        class="navbar navbar-expand-lg container py-3"
+        aria-label="Основная навигация"
+      >
+        <a class="brand" href="#home" aria-label="Brawl Universe — на главную">
+          <span class="brand-mark">B</span>
+          <span>BRAWL <b>UNIVERSE</b></span>
+        </a>
+
+        <button
+          class="menu-toggle"
+          id="menuToggle"
+          aria-label="Открыть меню"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="nav-panel" id="navPanel">
+          <a href="#about">О проекте</a>
+          <a href="#fighters">Бойцы</a>
+          <a href="#modes">Режимы</a>
+          <a href="#finder">Подбор</a>
+
+          <button
+            class="nav-icon"
+            id="showFavorites"
+            aria-label="Показать избранное"
+            title="Избранное"
+          >
+            ♡ <span id="favoriteCount">0</span>
+          </button>
+
+          <button
+            class="theme-toggle"
+            id="themeToggle"
+            aria-label="Переключить тему"
+            title="Переключить тему"
+          >
+            ☼
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- ГЛАВНЫЙ ЭКРАН -->
+      <section class="hero-section" id="home">
+        <div class="hero-orb orb-one"></div>
+        <div class="hero-orb orb-two"></div>
+
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <div class="eyebrow">
+              <span class="eyebrow-dot"></span>
+              НЕОФИЦИАЛЬНЫЙ ФАН-ПОРТАЛ
+            </div>
+
+            <h1>
+              Твоя вселенная
+              <span>Brawl Stars</span>
+            </h1>
+
+            <p>
+              Открывай новых бойцов, изучай их способности и находи своего
+              идеального персонажа.
+            </p>
+
+            <div class="hero-actions">
+              <a class="btn btn-primary-custom" href="#fighters">
+                Исследовать бойцов <span>↗</span>
+              </a>
+
+              <a class="btn btn-ghost-custom" href="#finder">
+                Выбрать любимого
+              </a>
+            </div>
+
+            <div class="hero-stats">
+              <div>
+                <strong>08</strong>
+                <span>бойцов в каталоге</span>
+              </div>
+
+              <i></i>
+
+              <div>
+                <strong>04</strong>
+                <span>игровых режима</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-art" aria-label="Иллюстративный блок">
+            <div class="hero-ring ring-a"></div>
+            <div class="hero-ring ring-b"></div>
+
+            <div class="hero-spark spark-a">✦</div>
+            <div class="hero-spark spark-b">✧</div>
+
+            <div class="hero-art-label">
+              <span>PLAYER<br />SELECT</span>
+              <b>01 / 08</b>
+            </div>
+
+            <div class="hero-character">
+              <img
+                src="https://cdn.brawlify.com/brawlers/borderless/16000000.png"
+                alt="Шелли — боец Brawl Stars"
+                data-fallback="Shelly"
+              />
+            </div>
+
+            <div class="hero-chip chip-top">READY TO BRAWL</div>
+
+            <div class="hero-chip chip-bottom">
+              <span class="chip-dot"></span>
+              ВЫБЕРИ СВОЙ СТИЛЬ
+            </div>
+          </div>
+        </div>
+
+        <a class="scroll-cue" href="#about">
+          <span></span>
+          ЛИСТАЙ НИЖЕ
+        </a>
+      </section>
+
+      <!-- О ПРОЕКТЕ -->
+      <section class="intro-section section-pad" id="about">
+        <div class="container intro-grid">
+          <div class="section-kicker">01 / ЗНАКОМСТВО</div>
+
+          <div class="intro-main">
+            <h2>
+              Не просто игра.<br />
+              <em>Целая вселенная.</em>
+            </h2>
+
+            <p>
+              Brawl Universe — фан-сайт для тех, кто хочет изучать бойцов,
+              разбираться в режимах и подбирать персонажа под свой стиль игры.
+              Здесь можно искать, сравнивать и сохранять любимчиков.
+            </p>
+
+            <div class="intro-note">
+              <span class="note-symbol">✳</span>
+              <span>
+                Создан фанатами для фанатов.<br />
+                <b>Не связан с Supercell.</b>
+              </span>
+            </div>
+          </div>
+
+          <div class="intro-side">
+            <div class="side-number">B<span>★</span></div>
+            <p>Твой следующий любимый боец может быть уже здесь.</p>
+            <a href="#fighters">Открыть каталог <span>→</span></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- КАТАЛОГ БОЙЦОВ -->
+      <section class="fighters-section section-pad" id="fighters">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <div class="section-kicker">02 / КАТАЛОГ</div>
+              <h2>Выбирай <em>бойца.</em></h2>
+              <p class="section-subtitle">
+                У каждого свой характер. Найди того, кто подходит тебе.
+              </p>
+            </div>
+
+            <div class="catalog-count">
+              <strong id="visibleCount">08</strong>
+              <span>ПЕРСОНАЖЕЙ</span>
+            </div>
+          </div>
+
+          <div class="catalog-tools">
+            <label class="search-box">
+              <span>⌕</span>
+              <input
+                type="search"
+                id="searchInput"
+                placeholder="Найти бойца..."
+                aria-label="Поиск по имени"
+              />
+            </label>
+
+            <select
+              id="classFilter"
+              class="form-select"
+              aria-label="Фильтр по классу"
+            >
+              <option value="">Все классы</option>
+              <option value="Урон">Урон</option>
+              <option value="Контроль">Контроль</option>
+              <option value="Убийца">Убийца</option>
+              <option value="Поддержка">Поддержка</option>
+            </select>
+
+            <select
+              id="rarityFilter"
+              class="form-select"
+              aria-label="Фильтр по редкости"
+            >
+              <option value="">Вся редкость</option>
+              <option value="Стартовый">Стартовый</option>
+              <option value="Редкий">Редкий</option>
+              <option value="Сверхредкий">Сверхредкий</option>
+              <option value="Эпический">Эпический</option>
+              <option value="Легендарный">Легендарный</option>
+            </select>
+
+            <button class="filter-reset" id="resetFilters">Сбросить ↺</button>
+          </div>
+
+          <div class="favorites-banner" id="favoritesBanner" hidden>
+            <span>♡</span>
+            Сейчас отображаются избранные бойцы
+            <button id="clearFavorites">Очистить список</button>
+          </div>
+
+          <div class="fighter-grid" id="fighterGrid" aria-live="polite"></div>
+
+          <p class="empty-state" id="emptyState" hidden>
+            Никого не нашли. Попробуй изменить запрос или фильтры.
+          </p>
+
+          <div class="catalog-foot">
+            <span>ПРОКРУТИ. НАЙДИ. ПОБЕЖДАЙ.</span>
+            <span>SCROLL TO EXPLORE ↓</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ИГРОВЫЕ РЕЖИМЫ -->
+      <section class="modes-section section-pad" id="modes">
+        <div class="container">
+          <div class="section-heading modes-heading">
+            <div>
+              <div class="section-kicker">03 / НА АРЕНЕ</div>
+              <h2>Выбери <em>режим.</em></h2>
+            </div>
+
+            <p class="section-subtitle">
+              Разные цели — разные стратегии.<br />
+              Какой вызов примешь сегодня?
+            </p>
+          </div>
+
+          <div class="mode-grid">
+            <article class="mode-card mode-gems">
+              <div class="mode-index">MODE / 01</div>
+              <div class="mode-symbol">◆</div>
+
+              <div class="mode-copy">
+                <h3>Gem Grab</h3>
+                <p>
+                  Собирайте кристаллы и удерживайте преимущество до конца
+                  отсчёта.
+                </p>
+              </div>
+
+              <span class="mode-arrow">↗</span>
+              <div class="mode-glow"></div>
+            </article>
+
+            <article class="mode-card mode-showdown">
+              <div class="mode-index">MODE / 02</div>
+              <div class="mode-symbol">◎</div>
+
+              <div class="mode-copy">
+                <h3>Showdown</h3>
+                <p>
+                  Выживай, собирай усиления и останься последним бойцом на
+                  арене.
+                </p>
+              </div>
+
+              <span class="mode-arrow">↗</span>
+              <div class="mode-glow"></div>
+            </article>
+
+            <article class="mode-card mode-ball">
+              <div class="mode-index">MODE / 03</div>
+              <div class="mode-symbol">◉</div>
+
+              <div class="mode-copy">
+                <h3>Brawl Ball</h3>
+                <p>Работайте командой, контролируйте мяч и забивайте голы.</p>
+              </div>
+
+              <span class="mode-arrow">↗</span>
+              <div class="mode-glow"></div>
+            </article>
+
+            <article class="mode-card mode-heist">
+              <div class="mode-index">MODE / 04</div>
+              <div class="mode-symbol">⬡</div>
+
+              <div class="mode-copy">
+                <h3>Heist</h3>
+                <p>Защищай свой сейф и пробивайся к сейфу противника.</p>
+              </div>
+
+              <span class="mode-arrow">↗</span>
+              <div class="mode-glow"></div>
+            </article>
+          </div>
+
+          <p class="mode-disclaimer">
+            Доступность режимов может меняться в зависимости от текущей ротации
+            игры.
+          </p>
+        </div>
+      </section>
+
+      <!-- ПОДБОР БОЙЦА -->
+      <section class="finder-section section-pad" id="finder">
+        <div class="container finder-layout">
+          <div class="finder-intro">
+            <div class="section-kicker">04 / ТВОЙ СТИЛЬ</div>
+
+            <h2>Найди своего <em>бойца.</em></h2>
+
+            <p>
+              Ответь на один вопрос — и мы подберём персонажа из каталога под
+              твой игровой вайб.
+            </p>
+
+            <div class="finder-decoration">
+              PICK<br />
+              <span>YOUR</span><br />
+              FIGHTER<span class="deco-star">✦</span>
+            </div>
+          </div>
+
+          <div class="finder-panel">
+            <div class="finder-step">
+              ВОПРОС 01
+              <span>ОДИН ВЫБОР</span>
+            </div>
+
+            <h3>Как ты любишь играть?</h3>
+
+            <div class="style-options" id="styleOptions">
+              <label class="style-option">
+                <input type="radio" name="playStyle" value="aggressive" />
+                <span class="option-icon">↯</span>
+                <span>
+                  <b>Агрессивно</b>
+                  <small>Врываться в бой и давить</small>
+                </span>
+                <i>↗</i>
+              </label>
+
+              <label class="style-option">
+                <input type="radio" name="playStyle" value="support" />
+                <span class="option-icon">✚</span>
+                <span>
+                  <b>Поддерживать</b>
+                  <small>Помогать команде</small>
+                </span>
+                <i>↗</i>
+              </label>
+
+              <label class="style-option">
+                <input type="radio" name="playStyle" value="range" />
+                <span class="option-icon">◎</span>
+                <span>
+                  <b>Держать дистанцию</b>
+                  <small>Попадать издалека</small>
+                </span>
+                <i>↗</i>
+              </label>
+
+              <label class="style-option">
+                <input type="radio" name="playStyle" value="stealth" />
+                <span class="option-icon">◌</span>
+                <span>
+                  <b>Действовать скрытно</b>
+                  <small>Неожиданные атаки</small>
+                </span>
+                <i>↗</i>
+              </label>
+            </div>
+
+            <button
+              class="btn btn-primary-custom finder-submit"
+              id="findFighter"
+            >
+              Подобрать бойца <span>↗</span>
+            </button>
+
+            <p class="finder-error" id="finderError" hidden>
+              Сначала выбери стиль игры.
+            </p>
+
+            <div class="finder-result" id="finderResult" hidden></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ОБРАТНАЯ СВЯЗЬ -->
+      <section class="feedback-section section-pad" id="feedback">
+        <div class="container feedback-layout">
+          <div>
+            <div class="section-kicker">05 / ОБРАТНАЯ СВЯЗЬ</div>
+
+            <h2>Есть что <em>сказать?</em></h2>
+
+            <p>
+              Нашёл ошибку или есть идея для фан-сайта? Расскажи — форма
+              работает в демонстрационном режиме.
+            </p>
+
+            <div class="feedback-aside">
+              YOUR VOICE<br />
+              <span>MATTERS.</span>
+            </div>
+          </div>
+
+          <form id="feedbackForm" class="feedback-form" novalidate>
+            <label for="userName">Твоё имя</label>
+            <input
+              class="form-control"
+              id="userName"
+              name="name"
+              required
+              maxlength="60"
+              placeholder="Как к тебе обращаться?"
+            />
+
+            <label for="userEmail">Email</label>
+            <input
+              class="form-control"
+              id="userEmail"
+              name="email"
+              type="email"
+              required
+              placeholder="name@example.com"
+            />
+
+            <label for="userMessage">Сообщение</label>
+            <textarea
+              class="form-control"
+              id="userMessage"
+              name="message"
+              rows="4"
+              required
+              maxlength="1000"
+              placeholder="Напиши пару слов..."
+            ></textarea>
+
+            <label class="consent-line">
+              <input type="checkbox" id="saveConsent" />
+              Сохранить демонстрационные данные в этом браузере
+            </label>
+
+            <button class="btn btn-primary-custom" type="submit">
+              Проверить и отправить <span>↗</span>
+            </button>
+
+            <p
+              class="form-message"
+              id="formMessage"
+              role="status"
+              aria-live="polite"
+              hidden
+            ></p>
+
+            <p class="form-hint">
+              Форма не отправляет сообщения на сервер и не отправляет email.
+            </p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- ПОДВАЛ -->
+    <footer class="site-footer">
+      <div class="container footer-main">
+        <a class="brand" href="#home">
+          <span class="brand-mark">B</span>
+          <span>BRAWL <b>UNIVERSE</b></span>
+        </a>
+
+        <p>
+          Фан-сайт для знакомства с бойцами и игровыми режимами Brawl Stars.
+        </p>
+
+        <div class="footer-links">
+          <a href="#fighters">Бойцы</a>
+          <a href="#modes">Режимы</a>
+          <a href="#finder">Подбор бойца</a>
+          <a
+            href="https://supercell.com/en/games/brawlstars/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Официальный сайт ↗
+          </a>
+        </div>
+      </div>
+
+      <div class="container footer-bottom">
+        <span>© <span id="year"></span> BRAWL UNIVERSE — FAN PROJECT</span>
+
+        <span>
+          Brawl Stars и связанные материалы принадлежат Supercell. Неофициальный
+          проект, не одобренный Supercell.
+        </span>
+      </div>
+
+      <div class="container image-sources">
+        <details>
+          <summary>Источники изображений и примечания</summary>
+
+          <p>
+            Изображения бойцов загружаются с CDN Brawlify
+            (https://cdn.brawlify.com/brawlers/). Это сторонний игровой ресурс,
+            а не официальный сайт Supercell. Перед публичным использованием
+            проверьте актуальность ссылок и условия использования. Официальный
+            сайт игры:
+            <a
+              href="https://supercell.com/en/games/brawlstars/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >supercell.com/en/games/brawlstars/</a
+            >.
+          </p>
+        </details>
+      </div>
+    </footer>
+
+    <!-- МОДАЛЬНОЕ ОКНО БОЙЦА -->
+    <div
+      class="modal fade"
+      id="fighterModal"
+      tabindex="-1"
+      aria-labelledby="modalTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content fighter-modal-content">
+          <button
+            type="button"
+            class="modal-close"
+            data-bs-dismiss="modal"
+            aria-label="Закрыть"
+          >
+            ×
+          </button>
+
+          <div id="modalBody"></div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="toast-message"
+      id="toastMessage"
+      role="status"
+      aria-live="polite"
+    ></div>
+
+    <!-- Bootstrap и JavaScript проекта -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
